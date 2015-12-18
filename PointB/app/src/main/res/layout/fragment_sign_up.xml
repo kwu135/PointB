@@ -1,0 +1,110 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.example.sophmore.pointb.SignUpFragment"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:theme="@style/TextLabel">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textFilter|textEmailAddress"
+                    android:ems="10"
+                    android:hint="@string/email_label"
+                    android:textColor="@color/white"
+                    android:nextFocusDown="@+id/firstNameEditText"
+                    android:id="@+id/emailEditText"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:theme="@style/TextLabel">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textFilter|text"
+                        android:ems="10"
+                        android:hint="@string/first_name_label"
+                        android:textColor="@color/white"
+                        android:nextFocusDown="@+id/lastNameEditText"
+                        android:id="@+id/firstNameEditText"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:theme="@style/TextLabel">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textFilter|text"
+                        android:ems="10"
+                        android:hint="@string/last_name_label"
+                        android:textColor="@color/white"
+                        android:id="@+id/lastNameEditText"/>
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:theme="@style/TextLabel">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textFilter|textNoSuggestions"
+                    android:ems="10"
+                    android:hint="@string/username_label"
+                    android:textColor="@color/white"
+                    android:id="@+id/usernameEditText_SignUp"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:theme="@style/TextLabel">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:ems="10"
+                    android:hint="@string/password_label"
+                    android:textColor="@color/white"
+                    android:id="@+id/passwordEditText_SignUp"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/continue_label"
+                android:background="@color/colorAccent"
+                android:textColor="@color/white"
+                android:id="@+id/sign_up_button"/>
+        </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">PointB</string>
+    <string name="action_log_out">Log Out</string>
+    <string name="section_format">Hello World from section ggggggg: %1$d</string>
+    <string name="dialog_title">Create an item</string>
+    <string name="dialog_message">Insert trash here</string>
+    <string name="cancel">Cancel</string>
+    <string name="create">Create</string>
+
+    <string name="title_activity_initial">InitialActivity</string>
+    <string name="continue_label">Continue</string>
+    <string name="sign_up_label">Sign Up</string>
+    <string name="sign_in_label">Sign In</string>
+    <string name="username_label">Username</string>
+    <string name="password_label">Password</string>
+    <string name="email_label">Email</string>
+    <string name="first_name_label">First Name</string>
+    <string name="last_name_label">Last Name</string>
+
+    <string name="create_item_label">Add To Your Bucket List:</string>
+    <string name="item_name_label">Item Name</string>
+
+    <string name="findAFriend">Find a Friend</string>
+    <string name="futureFunctionality">Will be implemented in the future patch</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
